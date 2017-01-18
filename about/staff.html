@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+		<link rel="stylesheet"  type="text/css" href="/css/bootstrap-theme.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="/css/styles.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/custom.js"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="header" class="page-header">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" >
+						<img src="http://placehold.it/232x150" />
+					</div>
+					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+						<h1>Company Name</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="header-menu">
+					<ul class="nav nav-pills">
+						<li><a href="/">Home</a></li>
+					 	<li class="active"><a href="/about/index.html">About Us</a>
+					  		<ul class="sub-nav">
+					  			<li><a href="/about/staff.html">Staff</a></li>
+					  			
+					  		</ul>
+					  </li>
+					  <li><a href="/projects/index.html">Projects</a>
+			  				<ul class="sub-nav">
+					  			<li><a href="/projects/construction.html">Construction</a>
+					  				<ul class="sub-nav">
+							  			<li><a href="/projects/school.html">School</a></li>
+							  			<li><a href="/projects/church.html">Church</a></li>
+							  			<li><a href="/projects/orphanage.html">Orphanage</a></li>
+							  		</ul>
+					  			</li>
+					  			<li><a href="/education/index.html">Education</a>
+					  				<ul class="sub-nav">
+							  			<li><a href="/education/school.html">School</a></li>
+							  			<li><a href="/education/vbs.html">Biblical</a></li>
+							  		</ul>
+					  			</li>
+					  			<li><a href="/projects/medical.html">Medical</a></li>
+					  		</ul>
+					  </li>
+					  <li><a href="/trips.html">Trips</a></li>
+					  <li><a href="/contact.html">Contact Us</a></li>
+					  <li></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h2 id="page-header">Staff</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 category">
+					
+					<a class="btn btn-primary btn-md" id="admin"onclick="peopleFilter('admin')" role="button">Admin</a>
+					<a class="btn btn-primary btn-md" id="executive"onclick="peopleFilter('executive')" role="button">Executive</a>
+					<a class="btn btn-primary btn-md" id="contractor"onclick="peopleFilter('contractor')" role="button">Contractor</a>
+					<a class="btn btn-danger btn-md" id="all"onclick="peopleFilter('all')" role="button">All Staff</a>
+				</div>
+			</div>
+			<div class="row">
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all contractor">
+					<img src="http://placehold.it/350x150" style="width: 100%;">
+					<h3>Beth</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <a class="hidden-xs"  id="beth" onclick="more(this.id)">More</a>
+					<span id="beth-hidden" class="more">Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <a class="beth" class="hidden-xs" id="beth" onclick="more(this.className)">Less</a></span>
+					</p>
+						
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all executive">
+					<img src="http://placehold.it/350x150" style="width: 100%;">
+					<h3>Dean</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <a id="dean" class="hidden-xs" onclick="more(this.id)">More</a>
+					
+					<span id="dean-hidden" class="more">Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <a class="dean" class="hidden-xs" onclick="more(this.className)">Show Less</a>
+					</span>
+					</p>
+					
+					
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all contractor Executive">
+					<img src="http://placehold.it/350x150" style="width: 100%;">
+					<h3>Scott</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <a id="scott" class="hidden-xs" onclick="more(this.id)">More</a>
+						
+					<span id="scott-hidden" class="more">Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <a class="scott" class="hidden-xs" onclick="more(this.className)">Less</a>
+					</span>
+					</p>
+						
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all admin">
+					<img src="http://placehold.it/350x150" style="width: 100%;">
+					<h3>David</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <a id="david" class="hidden-xs" onclick="more(this.id)">More</a>
+						
+					<span id="david-hidden" class="more">Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <a class="david" class="hidden-xs" onclick="more(this.className)">Less</a>
+					</span>
+					</p>
+						
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all contractor">
+					<img src="http://placehold.it/350x150" style="width: 100%;">
+					<h3>Olivia</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <a id="olivia" class="hidden-xs" onclick="more(this.id)">More</a>
+						
+					<span id="olivia-hidden" class="more">Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <a class="olivia" class="hidden-xs" onclick="more(this.className)">More</a></span>
+					</p>
+						
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all admin">
+					<img src="http://placehold.it/350x150" style="width: 100%;">
+					<h3>Matt</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <a id="matt" class="hidden-xs" onclick="more(this.id)">More</a>
+						
+					<span id="matt-hidden" class="more">Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <a class="matt" class="hidden-xs" onclick="more(this.className)">More</a>
+					</span>
+					</p>
+				</div>
+			</div>
+			<div class="row footer-row">
+			
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div id="footer">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h5>Contact Us</h5>
+							<p>
+								20350 Green Acres Drive 
+								<br /> 
+								Mason, VA 22827 
+								<br />
+								<a href="tel:5646782342">(564) 678 - 2342</a>
+							</p>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h5>Quick Links</h5>
+							<p>About Us</p>
+							<p>Projects</p>
+							<p>Trips</p>
+							<p>Contact Us</p>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h5>Blog Post Title is here</h5>
+							<p>Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque..... <a href="#">Read More</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="copyright">				
+						<p>Copyright &copy; 2016</p>
+					</div>
+				</div>
+		
+		</div>
+		</div>
+		
+	</body>
+</html>

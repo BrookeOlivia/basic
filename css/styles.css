@@ -1,0 +1,281 @@
+/******* General Template Styles ********/
+body
+{
+	background: #4D2C3D;	
+}
+
+.container
+{
+	background: #ffffff;
+}
+
+.row
+{
+	margin: 20px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	color: #ab9353;
+}
+
+a:hover
+{
+	color: #AB9353;
+}
+
+
+/******* Header Styles ********/
+
+#header
+{
+	text-align:center;
+}
+
+
+/******* Navigation Styles (no hover) ********/
+
+.header-menu
+{
+	background: #45657F;
+}
+
+.nav
+{
+	background-color: #155765;
+}
+
+.nav li
+{
+	background: #155765;
+	text-align: center;
+	position: relative;
+	border-left: solid 1px  #AB9353;
+	color: #fff;
+}
+
+.nav a
+{
+	color: #ffffff;
+	padding: 7px 11px;
+}
+
+.nav ul li,
+.nav ul
+{
+	list-style-type:none;
+	text-align:left;
+	background: transparent;
+	z-index: 1000;
+	position: relative;
+	border: none;
+	top: 20px;
+}
+
+.nav ul li
+{
+	background: #155765;
+}
+
+.sub-nav li a
+{
+	width: 100%;
+	display: inline-block;
+}
+
+.sub-nav
+{
+	padding-left: 0;
+	position: absolute;
+	top:43px;
+}
+.sub-nav .sub-nav
+{
+	top:0px;
+	padding: 7px;
+	z-index:2;
+	visibility:hidden;
+}
+
+.sub-nav .sub-nav li
+{
+	border-left: none;
+}
+
+ul.sub-nav
+{
+	position: absolute;
+	width: 150px !important;
+	word-wrap: normal;
+}
+
+.nav .active .sub-nav li a
+{
+	background: orange;
+}
+
+.sub-nav .sub-nav li
+{
+	display:none;
+}
+
+
+/******* Navigation Styles (hover) ********/
+
+.sub-nav .sub-nav li:hover
+{
+	z-index: 2000 !important;
+}
+
+.nav li a:hover
+{
+	text-decoration: none;
+}
+
+.nav li.active,
+.nav li.active a,
+.nav li a:hover,
+.nav li.active a:hover
+{
+	background: #AB9353 !important;
+	border-radius: 0;
+	/*border: 1px solid #AB9353;*/
+	/*height:40px;*/
+}
+
+.nav li
+.nav a
+{
+	border: 0 !important;
+}
+
+.nav-pills>li+li
+{
+	margin-left: 0px !important;
+}
+
+.nav
+{
+	height:40px;
+}
+
+/*************  Page title *************/
+#page-header
+{
+	border-bottom: 1px solid #AB9353;
+	padding-bottom: 20px;
+}
+
+
+/******* Footer Styles ********/
+
+.footer-row
+{
+	background: #155765;
+	color: #fff;
+	padding: 7px 11px;
+}
+.footer-row h5
+{
+	border-bottom: 1px solid #AB9353;
+	padding-bottom: 20px;
+}
+
+.footer-row p
+{
+	color: #fff;
+
+	margin: 0;
+}
+
+.copyright
+{
+	border-top: 1px solid grey;
+	padding: 10px 0;
+	margin-top:10px;
+}
+
+/******* slider Styles ********/
+ul#slideshow li
+{
+	list-style-type: none;
+}
+.slide
+{
+	position:absolute;
+	display:none;
+}
+#slide1
+{
+	display: block;
+}
+ul#slideshow
+{
+	
+	height: 350px;
+	padding-left: 0;
+}
+
+/******************  Side Navigation *******************/
+
+ul.side-nav
+{
+	list-style-type: none;
+	padding: 0 ;
+}
+
+ul.side-nav li
+{
+	padding: 7px 11px;
+	border-bottom: 1px solid #AB9353;
+}
+ul.side-nav li a
+{
+	width: 100%;
+	display:inline-block;
+}
+ul.side-nav li a:hover
+{
+	text-decoration: none;
+}
+
+ul.side-nav .side-nav-active
+{
+	background: #AB9353;
+}
+
+ul.side-nav .side-nav-active a
+{
+	color: #fff;
+}
+/********************  Trips ***************************/
+.trip
+{
+	border-bottom: 1px solid #4d2c3d;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+/****************** Staff *************************/
+a
+{
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
