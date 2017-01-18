@@ -221,6 +221,14 @@ ul#slideshow
 	padding-left: 0;
 }
 
+#slideshow img
+{
+	max-width:1140px;
+	max-height:340px;
+	width: 100%;
+
+}
+
 /******************  Side Navigation *******************/
 
 ul.side-nav
