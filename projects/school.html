@@ -6,6 +6,8 @@
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 		<link rel="stylesheet"  type="text/css" href="/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="/css/bootstrap-social.css">
+		<link rel="stylesheet" href="/css/font-awesome.css">
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="/css/styles.css">
 
@@ -20,48 +22,91 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="header" class="page-header">
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" >
-						<img src="http://placehold.it/232x150">
+					<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 logo" >
+						<a href="/"><img class="img-responsive" src="/images/logo.jpg"></a>
 					</div>
-					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-						<h1>Company Name</h1>
+					<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12" id="header-nav">
+							<div class="col-lg-12 col-md-12 hidden-sm hidden-xs header-nav" >
+								<ul class="nav nav-pills">
+									<li><a href="/">Home</a></li>
+								 	<li><a href="/about/index.html">About Us</a>
+								  		<ul class="sub-nav">
+								  			<li><a href="/about/staff.html">Staff</a></li>
+								  			
+								  		</ul>
+								  </li>
+								  <li><a href="/projects/index.html">Projects</a>
+						  				<ul class="sub-nav">
+								  			<li><a href="/projects/construction.html">Construction</a>
+								  				<ul class="sub-nav">
+										  			<li><a href="/projects/school.html">School</a></li>
+										  			<li><a href="/projects/church.html" class="active">Church</a></li>
+										  			<li><a href="/projects/orphanage.html">Orphanage</a></li>
+										  		</ul>
+								  			</li>
+								  			<li><a href="/education/index.html">Education</a>
+								  				<ul class="sub-nav">
+										  			<li><a href="/education/school.html">School</a></li>
+										  			<li><a href="/education/vbs.html">Biblical</a></li>
+										  		</ul>
+								  			</li>
+								  			<li><a href="/projects/medical.html">Medical</a></li>
+								  		</ul>
+								  </li>
+								  <li><a href="/trips.html">Trips</a></li>
+								  <li><a href="/contact.html">Contact Us</a></li>
+								  <li></li>
+								</ul>
+							</div>
+							<div class="row">
+								<div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+								<nav id="hamburger-menu">
+									<a role="button" onclick="$('.hamburger').slideToggle();">
+										<span class="glyphicon glyphicon-menu-hamburger"></span> Menu
+									</a>
+									<div class="hamburger">
+										<div class="mobile-nav">
+											<div>
+												<span><a href="/">Home</a></span>
+											</div>
+											<div>
+												<span onclick="$(this).siblings('ul').slideToggle();">About Us</span>
+													<ul>
+														<li><a href="/about">About</a></li>
+														<li><a href="/about/staff.html">Staff</a></li>
+													</ul>
+											</div>
+											<div>
+												<span onclick="$(this).siblings('ul').slideToggle();">Projects</span>
+												<ul>
+													<li><a href="/projects">All Projects</a></li>
+													<li><a href="/projects/construction.html">All Construction</a>
+														
+													</li>	
+													<li><a href="/education/index.html">All Education</a>
+													</li>	
+													<li><a href="/projects/medical.html">Medical</a>
+														
+													</li>
+												</ul>
+											</div>
+											<div>
+												<span><a href="/trips.html">Trips</a></span>
+											</div>
+											<div>
+												<span><a href="/contact.html">Contact Us</a></span>
+											</div>
+										</div>
+									</div>
+								</nav>
+								</div>
+							</div>
+						
 					</div>
+					
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="header-menu">
-					<ul class="nav nav-pills">
-						<li><a href="/">Home</a></li>
-					 	<li><a href="/about/index.html">About Us</a>
-					  		<ul class="sub-nav">
-					  			<li><a href="/about/staff.html">Staff</a></li>
-					  			
-					  		</ul>
-					  </li>
-					  <li class="active"><a href="/projects/index.html">Projects</a>
-			  				<ul class="sub-nav">
-					  			<li><a href="/projects/construction.html">Construction</a>
-					  				<ul class="sub-nav">
-							  			<li><a href="/projects/school.html">School</a></li>
-							  			<li><a href="/projects/church.html">Church</a></li>
-							  			<li><a href="/projects/orphanage.html">Orphanage</a></li>
-							  		</ul>
-					  			</li>
-					  			<li><a href="/education/index.html">Education</a>
-					  				<ul class="sub-nav">
-							  			<li><a href="/education/school.html">School</a></li>
-							  			<li><a href="/education/vbs.html">Biblical</a></li>
-							  		</ul>
-					  			</li>
-					  			<li><a href="/projects/medical.html">Medical</a></li>
-					  		</ul>
-					  </li>
-					  <li><a href="/trips.html">Trips</a></li>
-					  <li><a href="/contact.html">Contact Us</a></li>
-					  <li></li>
-					</ul>
-				</div>
-			</div>
+			
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<h2 id="page-header">School Construction</h2>
@@ -78,6 +123,21 @@
 				</div>
 				
 				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+					<div class="container-full">
+						<ul id="slideshow" onload="slideshow()">
+							<li class="slide img-responsive" id="slide1">
+								<img class="img-responsive" src="/images/projects/construction/school/munatpata-825.jpg" />
+							</li>
+							<li class="slide img-responsive" id="slide2">
+								<img class="img-responsive" src="/images/projects/construction/school/school-chaka-825.jpg" />
+							</li>
+							<li class="slide img-responsive" id="slide3">
+								<img class="img-responsive" src="/images/projects/construction/school/millpo-school-825.jpg" />
+							</li>
+							
+						</ul>
+						
+					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. Maecenas posuere nisl eget ante tincidunt porta et eget est. Suspendisse eros nisi, tristique id mauris non, gravida commodo justo. Sed porttitor sollicitudin nunc, quis porttitor purus gravida et. Donec sit amet odio velit. Nullam vitae leo a nisl scelerisque facilisis.</p>
 
 					<p>Curabitur a orci non erat malesuada ornare. Suspendisse placerat ipsum eu felis finibus, eu cursus diam faucibus. In posuere felis ultrices, placerat velit et, efficitur tortor. Duis condimentum nulla quis odio pretium porta. Mauris a nulla non ligula aliquet ornare. Donec dui quam, fermentum eget tincidunt ut, venenatis id mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin mattis in tortor id suscipit. Cras volutpat consequat libero ac dapibus. Sed blandit lectus at massa ultrices fermentum. Vivamus eu lacus at odio rutrum vehicula. Suspendisse id libero ut tortor finibus tempus eget venenatis tellus.</p>
@@ -102,6 +162,17 @@
 								<br />
 								<a href="tel:5646782342">(564) 678 - 2342</a>
 							</p>
+							<div class="social">
+								<a class="btn btn-social-icon btn-twitter" href="http://www.twitter.com" title="Kuyakim Ministries Twitter">
+								    <span class="fa fa-twitter"></span>
+								</a>
+								<a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com" title="Kuyakim Ministries Facebook">
+								    <span class="fa fa-facebook"></span>
+								</a>
+								<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com" title="Kuyakim Ministries LinkedIn">
+								    <span class="fa fa-linkedin"></span>
+								</a>
+							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 							<h5>Quick Links</h5>

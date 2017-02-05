@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+		<link rel="stylesheet"  type="text/css" href="/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="/css/bootstrap-social.css">
+		<link rel="stylesheet" href="/css/font-awesome.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="/css/styles.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/custom.js"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="header" class="page-header">
+					<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 logo" >
+						<a href="/"><img class="img-responsive" src="/images/logo.jpg"></a>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12" id="header-nav">
+							<div class="col-lg-12 col-md-12 hidden-sm hidden-xs header-nav" >
+								<ul class="nav nav-pills">
+									<li><a href="/">Home</a></li>
+								 	<li><a href="/about/index.html">About Us</a>
+								  		<ul class="sub-nav">
+								  			<li><a href="/about/staff.html">Staff</a></li>
+								  			
+								  		</ul>
+								  </li>
+								  <li><a href="/projects/index.html">Projects</a>
+						  				<ul class="sub-nav">
+								  			<li><a href="/projects/construction.html">Construction</a>
+								  				<ul class="sub-nav">
+										  			<li><a href="/projects/school.html">School</a></li>
+										  			<li><a href="/projects/church.html">Church</a></li>
+										  			<li><a href="/projects/orphanage.html">Orphanage</a></li>
+										  		</ul>
+								  			</li>
+								  			<li><a href="/education/index.html">Education</a>
+								  				<ul class="sub-nav">
+										  			<li><a href="/education/school.html">School</a></li>
+										  			<li><a href="/education/vbs.html">Biblical</a></li>
+										  		</ul>
+								  			</li>
+								  			<li><a href="/projects/medical.html">Medical</a></li>
+								  		</ul>
+								  </li>
+								  <li><a href="/trips.html" class="active">Trips</a></li>
+								  <li><a href="/contact.html">Contact Us</a></li>
+								  <li></li>
+								</ul>
+							</div>
+							<div class="row">
+								<div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+								<nav id="hamburger-menu">
+									<a role="button" onclick="$('.hamburger').slideToggle();">
+										<span class="glyphicon glyphicon-menu-hamburger"></span> Menu
+									</a>
+									<div class="hamburger">
+										<div class="mobile-nav">
+											<div>
+												<span><a href="/">Home</a></span>
+											</div>
+											<div>
+												<span onclick="$(this).siblings('ul').slideToggle();">About Us</span>
+													<ul>
+														<li><a href="/about">About</a></li>
+														<li><a href="/about/staff.html">Staff</a></li>
+													</ul>
+											</div>
+											<div>
+												<span onclick="$(this).siblings('ul').slideToggle();">Projects</span>
+												<ul>
+													<li><a href="/projects">All Projects</a></li>
+													<li><a href="/projects/construction.html">All Construction</a>
+														
+													</li>	
+													<li><a href="/education/index.html">All Education</a>
+													</li>	
+													<li><a href="/projects/medical.html">Medical</a>
+														
+													</li>
+												</ul>
+											</div>
+											<div>
+												<span><a href="/trips.html">Trips</a></span>
+											</div>
+											<div>
+												<span><a href="/contact.html">Contact Us</a></span>
+											</div>
+										</div>
+									</div>
+								</nav>
+								</div>
+							</div>
+						
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h2 id="page-header">Munatpata, Ayacucho Peru</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+					<div class="container-full">
+						<ul id="slideshow" onload="slideshow()">
+							<li class="slide img-responsive" id="slide1">
+								<img class="img-responsive" src="/images/trips/old-lady-detail.jpg" />
+							</li>
+							<li class="slide img-responsive" id="slide2">
+								<img class="img-responsive" src="/images/trips/peru-lady-hat-detail.jpg" />
+							</li>
+							<li class="slide img-responsive" id="slide3">
+								<img class="img-responsive" src="/images/trips/peruvian-child-detail.jpg" />
+							</li>
+							<li class="slide img-responsive" id="slide4">
+								<img class="img-responsive" src="/images/trips/peru-girl-detail.jpg" />
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+					<div class="details">
+						<h3>Trip Details</h3>
+						<hr />
+						<table class="table-responsive">
+							<tr>
+								<th><span class="glyphicon glyphicon-calendar"></span></th>
+								<td>July 8-15, 2017</td>
+							</tr>
+							<tr>
+								<th><span class="glyphicon glyphicon-credit-card"></span></th>
+								<td>$1,500 (US)</td>
+							</tr>
+							<tr>
+								<th><span class="glyphicon glyphicon-plane"></span></th>
+								<td>Dulles International Airport</td>
+							</tr>
+							<tr>
+								<th><span class="glyphicon glyphicon-arrow-right"></span></th>
+								<td>Jorge Chavez International Airport (Lima)</td>
+							</tr>
+							<tr>
+								<th><span class="glyphicon glyphicon-user"></span></th>
+								<td>Keith and Angelica</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h3>Overview</h3>
+					<ul class="project-detail-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#people" aria-controls="people" role="tab" data-toggle="tab">Quechua People</a></li>
+					    <li role="presentation"><a href="#culture" aria-controls="culture" role="tab" data-toggle="tab">Culture</a></li>
+					    <li role="presentation"><a href="#schedule" aria-controls="schedule" role="tab" data-toggle="tab">Schedule</a></li>
+					    <li role="presentation"><a href="#forms" aria-controls="forms" role="tab" data-toggle="tab">Forms</a></li>
+					    <li role="presentation"><a href="#medical" aria-controls="medical" role="tab" data-toggle="tab">Medical</a></li>
+
+				    </ul>
+					<div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="people">
+					    	<p>The speakers of Quechua, who total some 4.4 million people in Peru, 1.6 million in Bolivia, 2.2 million in Ecuador (Hornberger and King, 2001), and according to Ethnologue (2006) 8,200 in Chile, 60,000 in Argentina, and a few hundred in Brazil. have an only slight sense of common identity. The various Quechua dialects are in some cases so different that no mutual understanding is possible. Quechua was not only spoken by the Incas, but in some cases also by long-term enemies of the Inca Empire. These include the Huanca (Wanka is a Quechua dialect spoken today in the Huancayo area) and the Chanka (the Chanca dialect of Ayacucho) of Peru, and the Kañari (Cañar) in Ecuador. Quechua was spoken by some of these people, for example, the Wanka, before the Incas of Cusco, while other people, especially in Bolivia but also in Ecuador, adopted Quechua only in Inca times or afterward.</p>
+
+							<p>Quechua became Peru’s second official language in 1969 under the military regime of Juan Velasco Alvarado. Recently there have been tendencies toward nation building among Quechua speakers, particularly in Ecuador (Kichwa) but also in Bolivia, where there are only slight linguistic differences from the Peruvian version. An indication of this effort is the umbrella organization of the Kichwa peoples in Ecuador, ECUARUNARI (Ecuador Runakunapak Rikcharimuy). Some Christian organizations also refer to a “Quechua people,” such as the Christian shortwave radio station HCJB, "The Voice of the Andes" (La Voz de los Andes).[3] The term “Quechua Nation” occurs in such contexts as the name of the Education Council of the Quechua Nation (Consejo Educativo de la Nación Quechua, CENAQ), which is responsible for Quechua instruction or bilingual intercultural schools in the Quechua-speaking regions of Bolivia.[4] Some Quechua speakers claim that if nation states in Latin America had been built following the European pattern, they should be a single, independent nation.[citation needed]</p>
+							<p style="font-size: .7em;"><a href="https://en.wikipedia.org/wiki/Quechua_people#Historical_and_sociopolitical_background">Content from wikipedia</a></p>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="culture">
+						    <p>Curabitur ante lectus, aliquet in tempor id, ultrices vel justo. Quisque porta facilisis est, a suscipit libero facilisis id. Vivamus sit amet dolor hendrerit, mattis mi sed, congue massa. Morbi id mollis magna. Donec dictum hendrerit suscipit. Donec vel elementum dui. Aenean ac urna iaculis, aliquet ipsum et, consectetur lectus. Nulla facilisi. Phasellus condimentum rhoncus libero, elementum sodales lectus pellentesque sed. Sed sed ultrices erat. Phasellus mi ante, semper non arcu eget, ultricies imperdiet orci. Maecenas laoreet lacus sed ligula sodales tincidunt. Nullam ullamcorper, tortor eu rhoncus semper, augue lorem eleifend nisl, at tempor dolor mauris at dolor. Mauris dapibus ipsum ipsum, eu cursus quam efficitur pharetra. In suscipit in purus congue elementum.
+						    </p>
+						    <p>Praesent fringilla nec sapien et sollicitudin. Morbi viverra velit vitae porta gravida. Ut sagittis ex sit amet semper aliquet. Donec commodo eu neque eu finibus. Aliquam nec est mattis, lobortis metus id, elementum magna. Vivamus dapibus tincidunt velit. Cras vel erat vitae tellus tincidunt faucibus. Donec fermentum turpis ac tortor aliquam, vel elementum metus aliquam. Nullam porta leo in est maximus viverra. Etiam elementum, ipsum sodales tempor suscipit, lectus felis commodo lectus, nec ullamcorper sapien mauris in massa. Donec eu nibh malesuada odio pharetra mattis aliquam nec justo. Ut quis luctus sem, commodo cursus elit. In justo nisl, tristique ut malesuada quis, ullamcorper a nunc. Nullam ultricies lacus non lacus porta aliquam.
+						    </p>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="schedule">
+					    	<p>Coming Soon!</p></div>
+					    <div role="tabpanel" class="tab-pane" id="forms">
+					    	<p>New forms will be coming soon</p>
+					    </div>
+				    	<div role="tabpanel" class="tab-pane" id="medical">
+					
+							<h4>You will need:</h4>
+							<ul>
+								<li>routine vaccines</li>
+								<li>Hepatitis A</li>
+								<li>Hepatitis B</li>
+								<li>Malaria</li>
+							</ul>
+
+							<p>For more information please visit the <a href="https://wwwnc.cdc.gov/travel/destinations/traveler/none/peru">CDC</a> or your local Health Department.</p>
+						</div>
+					</div>
+
+
+					<br /><button type="button" onclick="location.href='/trips.html';" class="btn btn-primary btn-sm" style="margin: 10px 0;">Trip Listing</button>
+					
+				</div>
+			</div>
+			<div class="row footer-row">
+			
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div id="footer">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h5>Contact Us</h5>
+							<p>
+								20350 Green Acres Drive 
+								<br /> 
+								Mason, VA 22827 
+								<br />
+								<a href="tel:5646782342">(564) 678 - 2342</a>
+							</p>
+							<div class="social">
+								<a class="btn btn-social-icon btn-twitter" href="http://www.twitter.com" title="Kuyakim Ministries Twitter">
+								    <span class="fa fa-twitter"></span>
+								</a>
+								<a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com" title="Kuyakim Ministries Facebook">
+								    <span class="fa fa-facebook"></span>
+								</a>
+								<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com" title="Kuyakim Ministries LinkedIn">
+								    <span class="fa fa-linkedin"></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h5>Quick Links</h5>
+							<p>About Us</p>
+							<p>Projects</p>
+							<p>Trips</p>
+							<p>Contact Us</p>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h5>Blog Post Title is here</h5>
+							<p>Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque...<br /><button type="button" onclick="location.href='http://google.com';" class="btn btn-primary btn-sm" style="margin: 10px 0;">Learn More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="copyright">				
+						<p>Copyright &copy; 2016</p>
+					</div>
+				</div>
+		
+		</div>
+		</div>
+		
+	</body>
+</html>

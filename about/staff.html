@@ -2,67 +2,111 @@
 <html>
 	<head>
 		<title></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-		<link rel="stylesheet"  type="text/css" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+		<link rel="stylesheet"  type="text/css" href="/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="/css/bootstrap-social.css">
+		<link rel="stylesheet" href="/css/font-awesome.css">
 		<!-- Optional theme -->
-		<link rel="stylesheet" href="../css/styles.css">
+		<link rel="stylesheet" href="/css/styles.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 		<!-- Latest compiled and minified JavaScript -->
-		<script src="../js/bootstrap.min.js"></script>
-		<script src="../js/custom.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/custom.js"></script>
 		
 	</head>
 	<body>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="header" class="page-header">
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" >
-						<img src="http://placehold.it/232x150" />
+					<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 logo" >
+						<a href="/"><img class="img-responsive" src="/images/logo.jpg"></a>
 					</div>
-					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-						<h1>Company Name</h1>
+					<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12" id="header-nav">
+							<div class="col-lg-12 col-md-12 hidden-sm hidden-xs header-nav" >
+								<ul class="nav nav-pills">
+									<li><a href="/">Home</a></li>
+								 	<li><a href="/about/index.html">About Us</a>
+								  		<ul class="sub-nav">
+								  			<li><a class="active" href="/about/staff.html">Staff</a></li>
+								  			
+								  		</ul>
+								  </li>
+								  <li><a href="/projects/index.html">Projects</a>
+						  				<ul class="sub-nav">
+								  			<li><a href="/projects/construction.html">Construction</a>
+								  				<ul class="sub-nav">
+										  			<li><a href="/projects/school.html">School</a></li>
+										  			<li><a href="/projects/church.html">Church</a></li>
+										  			<li><a href="/projects/orphanage.html">Orphanage</a></li>
+										  		</ul>
+								  			</li>
+								  			<li><a href="/education/index.html">Education</a>
+								  				<ul class="sub-nav">
+										  			<li><a href="/education/school.html">School</a></li>
+										  			<li><a href="/education/vbs.html">Biblical</a></li>
+										  		</ul>
+								  			</li>
+								  			<li><a href="/projects/medical.html">Medical</a></li>
+								  		</ul>
+								  </li>
+								  <li><a href="/trips.html">Trips</a></li>
+								  <li><a href="/contact.html">Contact Us</a></li>
+								  <li></li>
+								</ul>
+							</div>
+							<div class="row">
+								<div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+								<nav id="hamburger-menu">
+									<a role="button" onclick="$('.hamburger').slideToggle();">
+										<span class="glyphicon glyphicon-menu-hamburger"></span> Menu
+									</a>
+									<div class="hamburger">
+										<div class="mobile-nav">
+											<div>
+												<span><a href="/">Home</a></span>
+											</div>
+											<div>
+												<span onclick="$(this).siblings('ul').slideToggle();">About Us</span>
+													<ul>
+														<li><a href="/about">About</a></li>
+														<li><a href="/about/staff.html">Staff</a></li>
+													</ul>
+											</div>
+											<div>
+												<span onclick="$(this).siblings('ul').slideToggle();">Projects</span>
+												<ul>
+													<li><a href="/projects">All Projects</a></li>
+													<li><a href="/projects/construction.html">All Construction</a>
+														
+													</li>	
+													<li><a href="/education/index.html">All Education</a>
+													</li>	
+													<li><a href="/projects/medical.html">Medical</a>
+														
+													</li>
+												</ul>
+											</div>
+											<div>
+												<span><a href="/trips.html">Trips</a></span>
+											</div>
+											<div>
+												<span><a href="/contact.html">Contact Us</a></span>
+											</div>
+										</div>
+									</div>
+								</nav>
+								</div>
+							</div>
+						
 					</div>
+					
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="header-menu">
-					<ul class="nav nav-pills">
-						<li><a href="/">Home</a></li>
-					 	<li class="active"><a href="/about/index.html">About Us</a>
-					  		<ul class="sub-nav">
-					  			<li><a href="/about/staff.html">Staff</a></li>
-					  			
-					  		</ul>
-					  </li>
-					  <li><a href="/projects/index.html">Projects</a>
-			  				<ul class="sub-nav">
-					  			<li><a href="/projects/construction.html">Construction</a>
-					  				<ul class="sub-nav">
-							  			<li><a href="/projects/school.html">School</a></li>
-							  			<li><a href="/projects/church.html">Church</a></li>
-							  			<li><a href="/projects/orphanage.html">Orphanage</a></li>
-							  		</ul>
-					  			</li>
-					  			<li><a href="/education/index.html">Education</a>
-					  				<ul class="sub-nav">
-							  			<li><a href="/education/school.html">School</a></li>
-							  			<li><a href="/education/vbs.html">Biblical</a></li>
-							  		</ul>
-					  			</li>
-					  			<li><a href="/projects/medical.html">Medical</a></li>
-					  		</ul>
-					  </li>
-					  <li><a href="/trips.html">Trips</a></li>
-					  <li><a href="/contact.html">Contact Us</a></li>
-					  <li></li>
-					</ul>
-				</div>
-			</div>
+			
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<h2 id="page-header">Staff</h2>
@@ -71,72 +115,118 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 category">
 					
-					<a class="btn btn-primary btn-md" id="admin"onclick="peopleFilter('admin')" role="button">Admin</a>
+					<a class="btn btn-primary btn-md" id="finance"onclick="peopleFilter
+					('finance')" role="button">Finance</a>
+					<a class="btn btn-primary btn-md" id="marketing"onclick="peopleFilter
+					('marketing')" role="button">Marketing</a>
 					<a class="btn btn-primary btn-md" id="executive"onclick="peopleFilter('executive')" role="button">Executive</a>
-					<a class="btn btn-primary btn-md" id="contractor"onclick="peopleFilter('contractor')" role="button">Contractor</a>
+					<a class="btn btn-primary btn-md" id="missionary"onclick="peopleFilter('missionary')" role="button">Missionary</a>
+					<a class="btn btn-primary btn-md" id="founder" onclick="peopleFilter('founder')" role="button">Founder</a>
 					<a class="btn btn-danger btn-md" id="all"onclick="peopleFilter('all')" role="button">All Staff</a>
 				</div>
 			</div>
 			<div class="row">
 				
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all contractor">
-					<img src="../images/staff/beth_detail.jpg" style="width: 100%;">
-					<h3>Beth</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <a class="hidden-xs"  id="beth" onclick="more(this.id)">More</a>
-					<span id="beth-hidden" class="more">Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <a class="beth" class="hidden-xs" id="beth" onclick="more(this.className)">Less</a></span>
-					</p>
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all missionary executive">
+					<img src="../images/staff/sarah_detail.jpg" style="width: 100%;">
+					<h3>Sarah</h3>
+					<p><span><em><a onclick="peopleFilter('missionary')">Missonary</a> <a onclick="peopleFilter('executive')">Executive</a></em></span></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <button type="button"  id="scott" onclick="more(this.id)" class="btn btn-primary btn-xs">More</button>
 						
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all executive">
-					<img src="../images/staff/dean_detail.jpg" style="width: 100%;">
-					<h3>Dean</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <a id="dean" class="hidden-xs" onclick="more(this.id)">More</a>
-					
-					<span id="dean-hidden" class="more">Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <a class="dean" class="hidden-xs" onclick="more(this.className)">Show Less</a>
-					</span>
-					</p>
-					
-					
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all contractor Executive">
-					<img src="../images/staff/scott_detail.jpg" style="width: 100%;">
-					<h3>Scott</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <a id="scott" class="hidden-xs" onclick="more(this.id)">More</a>
-						
-					<span id="scott-hidden" class="more">Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <a class="scott" class="hidden-xs" onclick="more(this.className)">Less</a>
+					<span id="sarah-hidden" class="more"><br />Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <button type="button"  id="scott" onclick="more(this.id)" class="btn btn-primary btn-xs">Less</button>
 					</span>
 					</p>
 						
 				</div>
 				
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all admin">
-					<img src="../images/staff/david_detail.jpg" style="width: 100%;">
-					<h3>David</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <a id="david" class="hidden-xs" onclick="more(this.id)">More</a>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all marketing  missionary">
+					<img src="../images/staff/brooke_detail.jpg" style="width: 100%;">
+					<h3>Brooke</h3>
+					<p><span><em><a onclick="peopleFilter('missionary')">Missonary</a> <a onclick="peopleFilter('marketing')">Marketing</a></em></span></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <button type="button"  id="olivia" onclick="more(this.id)" class="btn btn-primary btn-xs">More</button>
 						
-					<span id="david-hidden" class="more">Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <a class="david" class="hidden-xs" onclick="more(this.className)">Less</a>
+					<span id="brooke-hidden" class="more"><br />Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <button type="button"  id="olivia" onclick="more(this.id)" class="btn btn-primary btn-xs">Less</button>
+					</p>
+						
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all missionary marketing">
+					<img src="../images/staff/seth_detail.jpg" style="width: 100%;">
+					<h3>Seth</h3>
+					<p><span><em><a onclick="peopleFilter('missonary')">Missonary</a> <a onclick="peopleFilter('marketing')">Marketing</a></em></span></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <button type="button"  id="david" onclick="more(this.id)" class="btn btn-primary btn-xs">More</button>
+						
+					<span id="seth-hidden" class="more"><br />Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <button type="button"  id="david" onclick="more(this.id)" class="btn btn-primary btn-xs">Less</button>
 					</span>
 					</p>
 						
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all contractor">
-					<img src="../images/staff/olivia_detail.jpg" style="width: 100%;">
-					<h3>Olivia</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <a id="olivia" class="hidden-xs" onclick="more(this.id)">More</a>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all missionary Finance">
+					<img src="../images/staff/angelica_detail.jpg" style="width: 100%;">
+					<h3>Angelica</h3>
+					<p><span><em><a onclick="peopleFilter('missionary')">Missonary</a> <a onclick="peopleFilter('finance')">Finance</a></em></span></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <button type="button"  id="olivia" onclick="more(this.id)" class="btn btn-primary btn-xs">More</button>
 						
-					<span id="olivia-hidden" class="more">Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <a class="olivia" class="hidden-xs" onclick="more(this.className)">More</a></span>
+					<span id="angelica-hidden" class="more"><br />Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <button type="button"  id="olivia" onclick="more(this.id)" class="btn btn-primary btn-xs">Less</button>
 					</p>
 						
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all admin">
-					<img src="../images/staff/matt_detail.jpg" style="width: 100%;">
-					<h3>Matt</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <a id="matt" class="hidden-xs" onclick="more(this.id)">More</a>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all missionary finance">
+					<img src="../images/staff/charlotte_detail.jpg" style="width: 100%;">
+					<h3>Charlotte</h3>
+					<p><span><em><a onclick="peopleFilter('missionary')">Missonary</a> <a onclick="peopleFilter('finance')">finance</a></em></span></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <button type="button"  id="dean" onclick="more(this.id)" class="btn btn-primary btn-xs">More</button>
+					
+					<span id="charlotte-hidden" class="more"><br />Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <button type="button"  id="dean" onclick="more(this.id)" class="btn btn-primary btn-xs">Less</button>
+					</span>
+					</p>
+					
+					
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all missionary founder finance executive">
+					<img src="../images/staff/keith_detail.jpg" style="width: 100%;">
+					<h3>Keith</h3>
+					<p><span><em><a onclick="peopleFilter('missionary')">Missonary</a> <a onclick="peopleFilter('founder')">Founder</a> <a onclick="peopleFilter('finance')">Finance</a> <a onclick="peopleFilter('executive')">Executive</a></em></span></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <button type="button"  id="matt" onclick="more(this.id)" class="btn btn-primary btn-xs">More</button>
 						
-					<span id="matt-hidden" class="more">Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <a class="matt" class="hidden-xs" onclick="more(this.className)">More</a>
+					<span id="keith-hidden" class="more"><br />Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <button type="button"  id="matt" onclick="more(this.id)" class="btn btn-primary btn-xs">Less</button>
 					</span>
 					</p>
 				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all missionary marketing">
+					<img src="../images/staff/erin_detail.jpg" style="width: 100%;">
+					<h3>Erin</h3>
+					<p><span><em><a onclick="peopleFilter('missionary')">Missonary</a> <a onclick="peopleFilter('marketing')">Marketing</a></em></span></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. 
+					<button type="button"  id="beth" onclick="more(this.id)" class="btn btn-primary btn-xs">More</button>
+					<span id="erin-hidden" class="more"><br />Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <button type="button"  id="beth" onclick="more(this.id)" class="btn btn-primary btn-xs">Less</button>
+					</p>
+						
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all missionary finance">
+					<img src="../images/staff/traci_detail.jpg" style="width: 100%;">
+					<h3>Traci</h3>
+					<p><span><em><a onclick="peopleFilter('missionary')">Missonary</a> <a onclick="peopleFilter('marketing')">Finance</a></em></span></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <button type="button"  id="dean" onclick="more(this.id)" class="btn btn-primary btn-xs">More</button>
+					
+					<span id="traci-hidden" class="more"><br />Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <button type="button"  id="dean" onclick="more(this.id)" class="btn btn-primary btn-xs">Less</button>
+					</span>
+					</p>
+					
+					
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 all missionary executive">
+					<img src="../images/staff/jim_detail.jpg" style="width: 100%;">
+					<h3>Jim</h3>
+					<p><span><em><a onclick="peopleFilter('missionary')">Missonary</a> <a onclick="peopleFilter('executive')">Executive</a></em></span></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at lobortis felis. Nunc vitae odio massa. Integer blandit vulputate rutrum. Nunc tristique a dolor at commodo. Aenean rhoncus maximus mauris non tempor. Nulla in justo nec dolor pellentesque elementum vitae quis neque. Mauris posuere laoreet justo sed semper. Etiam sit amet viverra nunc. <button type="button"  id="olivia" onclick="more(this.id)" class="btn btn-primary btn-xs">More</button>
+						
+					<span id="jim-hidden" class="more"><br />Morbi aliquam porta viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla bibendum sem non gravida tincidunt. Cras in laoreet arcu. Aenean ac maximus tortor. Etiam ultricies lacinia scelerisque. <button type="button"  id="olivia" onclick="more(this.id)" class="btn btn-primary btn-xs">Less</button>
+					</p>
+						
+				</div>
+				
+
 			</div>
 			<div class="row footer-row">
 			
@@ -151,6 +241,17 @@
 								<br />
 								<a href="tel:5646782342">(564) 678 - 2342</a>
 							</p>
+							<div class="social">
+								<a class="btn btn-social-icon btn-twitter" href="http://www.twitter.com" title="Kuyakim Ministries Twitter">
+								    <span class="fa fa-twitter"></span>
+								</a>
+								<a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com" title="Kuyakim Ministries Facebook">
+								    <span class="fa fa-facebook"></span>
+								</a>
+								<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com" title="Kuyakim Ministries LinkedIn">
+								    <span class="fa fa-linkedin"></span>
+								</a>
+							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 							<h5>Quick Links</h5>
